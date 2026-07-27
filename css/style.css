@@ -452,8 +452,8 @@ button:focus-visible,
   max-height: 88vh;
   overflow-y: auto;
   overflow-x: hidden;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .modal-image {
@@ -463,6 +463,7 @@ button:focus-visible,
   justify-content: center;
   min-width: 0;
   overflow: hidden;
+  flex: 1.3 1 0%;
 }
 
 .modal-image img {
@@ -476,6 +477,8 @@ button:focus-visible,
   display: flex;
   flex-direction: column;
   min-width: 0;
+  flex: 1 1 0%;
+  background: var(--ink-soft);
 }
 
 .line {
@@ -557,10 +560,12 @@ button:focus-visible,
 
 @media (max-width: 760px) {
   .modal {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
   .modal-image {
     aspect-ratio: 4 / 3;
+    width: 100%;
+    flex: none;
   }
 }
 
