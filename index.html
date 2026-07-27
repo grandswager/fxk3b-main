@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Benny Ye</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-mark">Benny Ye<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="hero-eyebrow">digital diary</p>
+    <h1>everything i've been up to</h1>
+    <p class="hero-lede">
+      every moment, captured. 
+    </p>
+    <div class="hero-actions">
+      <a href="gallery.html" class="btn btn-primary">View the gallery</a>
+      <a href="about.html" class="btn btn-ghost">More about me</a>
+    </div>
+  </section>
+
+  <div class="sprocket-row" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Recent frames</h2>
+      <span class="section-note">a strip from the gallery</span>
+    </div>
+    <div class="filmstrip" id="home-filmstrip">
+      <!-- populated by js/home.js -->
+    </div>
+  </section>
+
+  <div class="sprocket-row tight" aria-hidden="true"></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="footer-year">2026</span> Exemplary Studios</span>
+    <span>Built with HTML, CSS &amp; JS · hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
